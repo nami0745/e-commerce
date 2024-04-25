@@ -1,0 +1,35 @@
+<head> <link rel="stylesheet" href="public/stylesheets/styles.css"> </head>
+<section>
+    <div class="container">
+        <div class="row mt-4">
+            <a href="/admin/add-product" class="btn btn-success ml-auto">add product</a>
+        </div>
+        <table class="table mt-5">
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">name</th>
+      <th scope="col">catogery</th>
+      <th scope="col">discription</th>
+      <th scope="col">image</th>
+      <th scope="col">Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each products}}
+   
+    <tr>
+      <th scope="row">3</th>
+      <td>{{this.name}}</td>
+      <td>{{this.category}}</td>
+      <td>{{this.descripition}}</td>
+      <td><img style="width: 50px; height:50px " src="{{this.Image}}" alt=""></td>
+      <td><button class="btn-success">Edit</button></td>
+      
+      
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+    </div>
+</section>
